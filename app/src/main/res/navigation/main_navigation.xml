@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/all">
+
+    <fragment
+        android:id="@+id/all"
+        android:name="com.example.coronaapp.ui.AllCountryFragment"
+        android:label="fragment_all_country"
+        tools:layout="@layout/fragment_all_country" >
+        <action
+            android:id="@+id/action_all_to_details"
+            app:destination="@id/details"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/all" />
+    </fragment>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.coronaapp.ui.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.coronaapp.ui.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+</navigation>
