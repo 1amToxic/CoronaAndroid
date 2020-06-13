@@ -18,13 +18,13 @@
             app:popUpTo="@id/all" />
     </fragment>
     <fragment
-        android:id="@+id/map"
-        android:name="com.example.coronaapp.ui.MapFragment"
-        android:label="fragment_map"
-        tools:layout="@layout/fragment_map" />
-    <fragment
         android:id="@+id/details"
         android:name="com.example.coronaapp.ui.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.coronaapp.ui.CoronaMapFragment"
+        android:label="fragment_corona_map"
+        tools:layout="@layout/fragment_corona_map" />
 </navigation>

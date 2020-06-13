@@ -63,6 +63,7 @@ class AllCountryFragment : Fragment() {
     }
     private fun navigateToDetails(corona : CoronaUseData){
         viewModel.focusCountry.value = corona
+        viewModel.updateMapCountry()
         findNavController().navigate(R.id.action_all_to_details)
     }
 }

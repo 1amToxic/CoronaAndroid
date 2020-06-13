@@ -48,8 +48,8 @@ class CoronaAdapter(val context : Context,val onClickItem : (CoronaUseData) -> U
                 .centerCrop()
                 .into(thumbnail)
             countryName.text = corona.country
-            totalCases.text = "Total cases" + corona.cases
-            totalDeaths.text = "Total deaths " +   corona.deaths
+            totalCases.text = "Total cases: " + corona.cases
+            totalDeaths.text = "Total deaths: " +   corona.deaths
             itemview.setOnClickListener{
                 Log.d("AppLog","Click")
                 onClickItem(corona)
